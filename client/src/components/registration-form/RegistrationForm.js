@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { postAdminUser } from "../../helpers/axiosHelper";
+import { toast } from "react-toastify";
 
 export const RegistrationForm = () => {
   const [form, setForm] = useState({});
@@ -24,6 +25,8 @@ export const RegistrationForm = () => {
     }
 
     const { confirmPassword, ...rest } = form;
+    const { status, message } = await postAdminUser(rest);
+    toast[status](message);
     const result = await postAdminUser(form);
     console.log(result);
   };
