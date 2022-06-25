@@ -48,6 +48,11 @@ const AdminSchema = new mongoose.Schema(
       type: String,
       maxlength: 50,
     },
+
+    verificationCode: {
+      type: String,
+      maxlength: 50,
+    },
   },
   {
     timestamps: true,
