@@ -10,7 +10,7 @@ export const Header = () => {
         <Navbar.Brand href="#home">Admin CMS </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Link to="/" className="nav-link">
               Login{" "}
             </Link>

@@ -1,8 +1,15 @@
 import React from "react";
+import { RegistrationForm } from "../components/registration-form/RegistrationForm";
 import { MainLayout } from "../layout/MainLayout";
 
 export const Registration = () => {
-  return <MainLayout>Registration pages</MainLayout>;
+  return (
+    <MainLayout>
+      <div className="reg-form d-flex justify-content-center">
+        <RegistrationForm />
+      </div>
+    </MainLayout>
+  );
 };
 
 export default Registration;
